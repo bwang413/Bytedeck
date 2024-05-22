@@ -16,7 +16,7 @@ django-grappelli>=2.13.3,<2.14
 django-import-export>=2.0,<2.1
 #freeze tablib to 0.14.0 until django-import-export fixes its own dependencies
 # https://github.com/django-import-export/django-import-export/issues/1064
-bleach[css]>=5,<6
+bleach[css]>=5,<7
 cssutils==2.6.0
 html2text==2020.1.16
 tablib==0.14.0
