@@ -3,7 +3,7 @@ backports.csv>=1.0.7,<1.1
 beautifulsoup4>=4.8,<4.12
 celery>=5.2.2,<5.4
 Django==3.2.25  # temp pinned at .19 while resolvoing issue #1353
-django-allauth>=0.54,<0.55
+django-allauth>=0.54,<0.64
 django-querysetsequence>=0.16
 django-bootstrap-datepicker-plus>=4.0,<6.0
 django-celery-beat>=2.2,<2.6
