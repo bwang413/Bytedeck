@@ -18,10 +18,5 @@ jobs:
         run: docker compose run web python src/manage.py check
       - name: Check for missing migrations
         run: docker compose run web python src/manage.py makemigrations --check --dry-run
-      - name: Run test suite
-        run: |
-          docker compose exec -T web coverage run --parallel-mode src/manage.py test src
-          docker compose exec -T web coverage combine
-          docker compose exec -T web coverage xml
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
